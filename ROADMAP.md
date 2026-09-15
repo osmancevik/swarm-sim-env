@@ -2,10 +2,10 @@
 
 ## Phase 1: Repository Setup and Initial Configuration
 - [X] **Git Initialization:** Initialize the git repository.
-- [ ] **Directory Structure:** Define the core folder architecture (e.g., `docker/`, `scripts/`, `src/`, `config/`).
+- [X] **Directory Structure:** Define the core folder architecture (e.g., `docker/`, `scripts/`, `src/`, `config/`).
 - [X] **Gitignore:** Add a comprehensive `.gitignore` file specifically tailored for ROS 2, C++, Python, and Docker.
 - [X] **License:** Choose and add an open-source license (e.g., MIT or Apache 2.0).
-- [ ] **Linting & Formatting:** Set up `.pre-commit-config.yaml` to enforce code quality (e.g., `black` for Python, `clang-format` for C++) from day one.
+- [X] **Linting & Formatting:** Set up `.pre-commit-config.yaml` to enforce code quality (e.g., `black` for Python, `clang-format` for C++) from day one.
 
 ## Phase 2: Docker Environment Architecture and Base Images
 - [ ] **Base Image Selection:** Choose a stable ROS 2 base image (e.g., `ros:humble-ros-base` for agents, `ros:humble-desktop` for the simulation).
