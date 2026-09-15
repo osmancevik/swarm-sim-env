@@ -1,10 +1,10 @@
 # TEKNOFEST Swarm UAV Simulation Environment Roadmap
 
 ## Phase 1: Repository Setup and Initial Configuration
-- [ ] **Git Initialization:** Initialize the git repository.
+- [X] **Git Initialization:** Initialize the git repository.
 - [ ] **Directory Structure:** Define the core folder architecture (e.g., `docker/`, `scripts/`, `src/`, `config/`).
-- [ ] **Gitignore:** Add a comprehensive `.gitignore` file specifically tailored for ROS 2, C++, Python, and Docker.
-- [ ] **License:** Choose and add an open-source license (e.g., MIT or Apache 2.0).
+- [X] **Gitignore:** Add a comprehensive `.gitignore` file specifically tailored for ROS 2, C++, Python, and Docker.
+- [X] **License:** Choose and add an open-source license (e.g., MIT or Apache 2.0).
 - [ ] **Linting & Formatting:** Set up `.pre-commit-config.yaml` to enforce code quality (e.g., `black` for Python, `clang-format` for C++) from day one.
 
 ## Phase 2: Docker Environment Architecture and Base Images
