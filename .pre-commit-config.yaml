@@ -1,0 +1,40 @@
+# ==========================================
+# Pre-Commit Hooks
+# ==========================================
+# Installation and Usage:
+# 1. pip install pre-commit
+# 2. pre-commit install
+# ==========================================
+
+repos:
+  # Basic File Checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-xml
+      - id: check-added-large-files
+        args: ['--maxkb=5000'] # Prevent committing files larger than 5MB
+
+  # Python: Auto Formatter (Black)
+  - repo: https://github.com/psf/black
+    rev: 24.2.0
+    hooks:
+      - id: black
+        args: [--line-length=100]
+
+  # Python: Fast Linter and Import Sorter (Ruff)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.2
+    hooks:
+      - id: ruff
+        args: [ --fix, --exit-non-zero-on-fix ]
+
+  # C/C++: Auto Formatter (Clang-Format)
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v17.0.6
+    hooks:
+      - id: clang-format
+        types_or: [c++, c]
